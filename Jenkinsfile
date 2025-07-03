@@ -21,7 +21,7 @@ pipeline {
             steps{
                 script{
                    withCredentials([string(credentialsId: 'efgh', variable: 'abcd')]) {
-                   bat 'docker login -u nhivas27 -p DHANUSKARTHI2222'
+                   bat 'docker login -u nhivas27 -p <your password>'
 
 }
                    bat 'docker push nhivas27/devops-integration'
